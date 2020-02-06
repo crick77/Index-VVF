@@ -1,0 +1,24 @@
+{
+	"resourcePackages": ["it.dipvvf.abr.app.index.rest"],
+	"prettyPrint": true,
+	"cacheTTL": 0,
+	"openAPI": {
+		"info": {
+			"version": "1.0.0",
+			"title": "INDEX SERVICE API",
+			"description": "Implementazione progetto finale Sose 2019/2020:'Index' gestisce un indice inverso per le ricerche.",
+			"contact": {"email": "fantaconi@gmail.com"},
+			"license": {
+				"name": "Iovenitti matricola,Fantaconi matricola,Sallese matricola",
+				"url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+			}
+		},
+		"servers": [
+			{
+				"url": "http://localhost:8080/Index/api",
+				"description": "Server description"
+			}
+		]
+	},
+	"userDefinedOptions": {"support.swagger.ui": true}
+}
