@@ -28,6 +28,11 @@ public class IndexSOAPImp implements IndexSOAP {
 					}
 				}
 			}
+			
+			sql = "UPDATE pubblicazione SET indexing_status='OK'";
+			try(PreparedStatement ps = con.prepareStatement(sql)) {
+				ps.executeUpdate();
+			}
 		}
 		catch(SQLException sqle) {
 			System.err.println("\nReindicizzazione annullata a causa di errore SQL: "+sqle);
